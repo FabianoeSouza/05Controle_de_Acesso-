@@ -1,14 +1,11 @@
-package med.voll.api.infra;
+package med.voll.api.infra.exception;
 
 import jakarta.persistence.EntityNotFoundException;
-import org.hibernate.action.internal.EntityActionVetoException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-
-import java.lang.reflect.Field;
 
 @RestControllerAdvice  // serve para dizer ao spring que é a classe q vai tratar erros na API
 public class TratadorDeErros {
